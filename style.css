@@ -153,21 +153,23 @@ body{
     background-color: whitesmoke;
 }
 #cont1{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 80%;
-    height: 800px;
-    margin: auto;
+    /* height: 800px; */
+    margin: 0px auto;
 }
 #Acct{
     background-color: white;
-    height: 700px;
+    height: 800px;
+    padding-bottom: 30px;
 }
 #details{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 60%;
-    height: 600px;
+    /* height: 600px; */
     margin: auto;
-    padding: 20px;
+    padding: 30px;
+
 }
 form{
     width: 50%;
