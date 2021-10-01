@@ -29,7 +29,7 @@
        <div id="list">
         <ul >
             <li><a href="#">Members can access discounts and special features</a></li>
-            <li><button>Sign in</button></li>
+            <li><button id="btn2">Sign in</button></li>
             <li><a href="Sign_up.html">Create a free account</a></li>
         </ul>
     </div>
@@ -121,5 +121,10 @@
         } else{
             list.style.display = "none";
         }
+    })
+
+    const btn2 = document.getElementById("btn2");
+    btn2.addEventListener("click", (event)=>{
+        window.location.href = "Sign_in.html"
     })
 </script>
