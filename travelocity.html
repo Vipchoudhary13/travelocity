@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>travelocity</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="C:\Users\Vipul\Desktop\fonticons\css\all.min.css">
+  
+</head>
+<body>
+    <div id="backImg">
+       <div id="header">
+           <div class="main flex">
+               <div class="flex">
+                   <img src="https://www.travelocity.com/_dms/header/logo.svg?locale=en_US&siteid=80001&2"/>
+                   <a href="#">More traval</a>  
+               </div>
+               <div class="flex flex1">
+                   <a href="#">Espanol</a>
+                   <a href="#">List your property</a>
+                   <a href="#">Support</a>
+                   <a href="#">Trips</a>
+                   <button id="btn">Sign in</button>         
+               </div>
+           </div>
+       </div>
+       <div id="list">
+        <ul >
+            <li><a href="#">Members can access discounts and special features</a></li>
+            <li><button>Sign in</button></li>
+            <li><a href="Sign_up.html">Create a free account</a></li>
+        </ul>
+    </div>
+       <div id="menu">
+           <div id="icons">
+               <a href="#">
+                <i class="fas fa-2x fa-building"></i>
+                <p >Stays</p>
+               </a>
+               <a href="#">
+                <i class="fas fa-2x fa-plane"></i>
+                <p>Flights</p>
+               </a>
+               <a href="#">
+                <i class="fas fa-2x fa-car"></i>
+                <p>Cars</p>
+               </a>
+               <a href="#">
+                <i class="fas fa-2x fa-toolbox"></i>
+                <p>Packages</p>
+               </a>
+               <a href="#">
+                <i class="fas fa-2x fa-clipboard-list"></i>
+                <p>Time to do</p>
+               </a>
+               <a href="#">
+                <i class="fas fa-2x fa-crown"></i>
+                <p>Cruises</p>
+               </a>
+           </div>
+           <hr/>
+           <div id="date"> 
+               <div >
+                <i class="fas fa-map-marker-alt">Going to</i>
+               </div>
+               <div>
+                   <div class="block">
+                        <i class="fas fa-2x fa-calendar-alt"></i>
+                       <div>
+                           <p>Ckeck-in</p>
+                           <p>Oct 14</p>
+                       </div>
+                   </div>
+               </div>
+               <div >
+                   <div class="block">
+                       <i class="fas fa-2x fa-calendar-alt"></i>
+                       <div>
+                           <p>Ckeck-in</p>
+                           <p>Oct 14</p>
+                       </div>
+                    </div>
+               </div>
+               <div >
+                <div class="block">
+                    <i class="fas fa-2x fa-user"></i>
+                    <div>
+                        <p>Travelers</p>
+                        <p>1 room, 2 travelers</p>
+                    </div>
+                 </div>
+               </div>
+           </div>
+           <br/>
+           <br/>
+           <br/>
+           <br/>
+           <div id="search">Search</div>  
+       </div>
+       <h1 style="color: white; width: 90%; margin: 20px auto;">Members discounts</h1>
+       <p style="color: white; width: 90%; margin: 20px auto; font-size: 20px;">As a member, you now get access to our best travel discounts!</p>
+       <div id="save">Save now</div>
+    </div>
+    <div id="contant">
+        <h1>Why you should Seize Your Someday with Travelocity</h1>
+    </div>
+</body>
+</html>
+
+<script>
+    const btn = document.getElementById("btn");
+    const list = document.getElementById("list");
+    
+    list.style.display = "none"
+    btn.addEventListener("click", (event)=>{
+        if(list.style.display == "none"){
+            list.style.display = "block"; 
+            console.log(list);  
+        } else{
+            list.style.display = "none";
+        }
+    })
+</script>
