@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign_up</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="C:\Users\Vipul\Desktop\fonticons\css\all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="main flex">
+            <div class="flex">
+                <img src="https://www.travelocity.com/_dms/header/logo.svg?locale=en_US&siteid=80001&2"/>
+            </div>
+            <div class="flex flex1">
+                <a href="#">List your property</a>
+                <a href="#">Account</a>
+                <a href="#">My Lists</a>
+                <a href="#">Mu Trips</a>
+                <a href="#">Support</a>
+                <a href="#">Espanol</a>         
+            </div>
+        </div>
+    </div>
+    <div id="cont">
+        <div id="cont1">
+            <h1 style="color: #0D47A1;">Create an Account</h1>
+            <div id="Acct">
+                <div id="details">
+                    <form id="myForm" onsubmit="signup(event)" action="">
+                        <label>Given/First Name</label><br/>
+                        <input type="text" id="F_name"><br/>
+                        <label>Surname/Last Name</label><br/>
+                        <input type="text" id="L_name"><br/>
+                        <label>Email Address</label><br/>
+                        <input type="email" id="email"><br/>
+                        <label>Password</label><br/>
+                        <input type="password" id="password"><br/>
+
+                        <button>Create Account</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    function signup(e){
+        e.preventDefault();
+
+        let myForm = document.getElementById("myForm");
+
+        let F_name = myForm.F_name.value;
+        let L_name = myForm.L_name.value;
+        let email = myForm.email.value;
+        let password = myForm.password.value;
+        // console.log("data:", F_name, L_name, email, password);
+
+        if(localStorage.getItem("users") === null){
+            localStorage.setItem("users", JSON.stringify([]));
+        }
+
+        let user = {
+            F_name,
+            L_name,
+            email,
+            password,
+        };
+        // console.log("user", user);
+
+        let arr = JSON.parse(localStorage.getItem("users"));
+
+        arr.push(user);  
+        localStorage.setItem("users", JSON.stringify(arr));
+       
+    }
+</script>
